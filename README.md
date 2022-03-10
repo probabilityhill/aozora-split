@@ -1,5 +1,6 @@
 # aozora-split
-青空文庫データ（芥川龍之介『蜘蛛の糸』）を前処理し分かち書きしたものをテキストファイルに保存&amp;pickle化。
+青空文庫データ（芥川龍之介『蜘蛛の糸』）の前処理・分かち書きを行う。それをテキストファイルに保存しpickle化する。<br>
+詳しい手順 → <a href="https://qiita.com/probabilityhill/items/86795d4d5b9b865bf1f8#%E7%92%B0%E5%A2%83">Qiita記事</a>
 
 ## 出力例
 ```Text
