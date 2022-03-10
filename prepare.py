@@ -41,7 +41,7 @@ text_splitted = list(filter(None, text_splitted))
 mecab = MeCab.Tagger("-Owakati")
 for i in range(len(text_splitted)):
     text_splitted[i] = mecab.parse(text_splitted[i]).split()
-print(text_splitted) # 確認
+print(text_splitted)  # 確認
 
 # テキストファイルに書き込む
 file_w = PATH + FILENAME + "_splitted.txt"
