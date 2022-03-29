@@ -3,7 +3,7 @@ import pickle
 import MeCab
 
 PATH = "text/"
-FILENAME = "akutagawa_kumonoito"
+FILENAME = input("Enter file name: ")
 
 # テキストファイルの読み込み
 file_r = PATH + FILENAME + ".txt"
@@ -20,6 +20,7 @@ text = re.sub(r"［.*?］", "", text)  # ［...］を削除
 text = re.sub(r"（.*?）", "", text)  # （...）を削除
 text = re.sub(r"｜", "", text)  # 「｜」を削除
 text = re.sub("\n", "", text)  # 改行を削除
+text = re.sub("　　[一二三四五六七八九十]+", "", text)  # 漢数字を削除
 text = re.sub(r"\u3000", "", text)  # 全角スペースを削除
 text = re.sub(r"。", "<period>", text)  # 句点を<period>に
 
